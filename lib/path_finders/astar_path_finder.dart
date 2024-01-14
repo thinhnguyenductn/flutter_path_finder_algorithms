@@ -41,7 +41,7 @@ class AStarPathFinder extends BasePathFinder {
         queue.add(neighbor);
       }
 
-      await Future<void>.delayed(delay);
+      // await Future<void>.delayed(delay);
       yield graph;
     }
   }

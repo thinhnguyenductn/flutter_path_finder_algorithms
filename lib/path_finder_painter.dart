@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_path_finder_algorithms/path_finders/node.dart';
 
@@ -63,9 +62,9 @@ class PathFinderPainter extends CustomPainter {
       return 3;
     }
 
-    if (node.visited) {
-      return 6;
-    }
+    // if (node.visited) {
+    //   return 6;
+    // }
 
     return 24;
   }
@@ -75,9 +74,9 @@ class PathFinderPainter extends CustomPainter {
       return Colors.yellow;
     }
 
-    if (node.visited) {
-      return Colors.red;
-    }
+    // if (node.visited) {
+    //   return Colors.red;
+    // }
 
     return Colors.white;
   }

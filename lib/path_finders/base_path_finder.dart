@@ -59,7 +59,7 @@ abstract class BasePathFinder {
     while (path.isNotEmpty) {
       pathReversed.add(path.removeLast());
 
-      await Future<void>.delayed(const Duration(milliseconds: 32));
+      // await Future<void>.delayed(const Duration(milliseconds: 32));
       yield pathReversed;
     }
   }
